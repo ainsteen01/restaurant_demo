@@ -21,7 +21,7 @@ header {
 }
 
 nav {
-    max-width: 1400px; /* wider */
+    max-width: 100%; /* wider */
     margin: auto;
     padding: 25px; /* slightly bigger */
     display: flex;
@@ -60,13 +60,11 @@ nav ul li a:hover {
     border-radius: 25px;
 }
 .mobile-menu-btn {
-
+    background: transparent;
     display: none;
-
+    border:none;
     cursor: pointer;
-
-    margin-right: 15px;
-
+    margin-right: 10px;
 }
 .mobile-menu-btn > img{
     height: 50px;
@@ -91,9 +89,12 @@ nav ul li a:hover {
 }
 .mobile-menu > ul > li{
     padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .mobile-menu > ul > li > a{
     text-decoration: none;
+    font-size: 1.3rem;
     color: white;
 }
 .mobile-menu > ul > li > a:hover{
