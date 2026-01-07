@@ -1,212 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Restaurant</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Restaurant | Modern Fine Dining</title>
+    <meta name="description" content="Experience sophisticated dining at Nexus Restaurant. Modern cuisine with elegant ambiance.">
+    <meta name="keywords" content="fine dining, restaurant, gourmet, modern cuisine">
+    <meta name="author" content="Nexus Restaurant">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/000000/restaurant-.png">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <!-- Navigation -->
-    <header>
-      <nav>
-        <div class="logo">UrbanTaste</div>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact" class="btn-nav">Reserve</a></li>
-        </ul>
-        <div class="mobile-menu-btn">
-          <img src="Images/Hamburger_Menu.png">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Nexus</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reservation" class="nav-link">Reservation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#reservation" class="nav-btn">Book Table</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-      </nav>
-    </header>
-
-    <div class="mobile-menu">
-      <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Reserve</a></li>
-        </ul>
-    </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="hero">
-      <div class="hero-content">
-        <h1>Experience Fine Dining</h1>
-        <p>Where modern cuisine meets elegant ambiance.</p>
-        <a href="#menu" class="btn">View Menu</a>
-      </div>
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Where Culinary Art Meets Elegance</h1>
+                <p class="hero-subtitle">Experience a symphony of flavors crafted by award-winning chefs in an atmosphere of refined luxury.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i> View Menu
+                    </a>
+                    <a href="#reservation" class="btn btn-secondary">
+                        <i class="fas fa-calendar-alt"></i> Reserve Now
+                    </a>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <span>4.9/5 Google Reviews</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-wine-glass-alt"></i>
+                        <span>150+ Wine Selection</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <span>Award Winning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <h2>About Us</h2>
-      <p class="section-text">
-        UrbanTaste blends contemporary culinary arts with exceptional service.
-        Our chefs craft modern dishes using fresh, locally sourced ingredients.
-      </p>
-      <img
-        src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1600&q=80"
-        class="about-img"
-      />
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Story</h2>
+                <p class="section-subtitle">Where tradition meets innovation</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Restaurant Interior" loading="lazy">
+                    </div>
+                    <div class="experience-badge">
+                        <span>8+</span>
+                        <small>Years Experience</small>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Crafting Memorable Dining Experiences Since 2015</h3>
+                    <p>Nexus Restaurant was born from a passion for culinary excellence and a desire to create an unforgettable dining experience. Our philosophy blends traditional techniques with modern creativity.</p>
+                    <p>We source our ingredients from local farmers and trusted global suppliers who share our commitment to quality and sustainability. Each dish tells a story of craftsmanship and attention to detail.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Signature Dishes</p>
+                        </div>
+                        <div class="stat">
+                            <h4>12</h4>
+                            <p>Award Winning Chefs</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Fresh Ingredients</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#menu" class="btn btn-outline">
+                        <i class="fas fa-arrow-right"></i> Explore Our Menu
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Menu Section -->
-    <!-- Full Menu Section -->
-    <section id="menu" class="section dark">
-      <h2>Our Signature Menu</h2>
-      <p class="section-text">
-        A curated selection of fine dishes crafted by our world-class chefs.
-      </p>
-
-      <!-- Starters -->
-      <h3 class="menu-category">Starters</h3>
-      <div class="menu-grid large">
-        <div class="menu-card">
-          <img
-            src="Images/Bruschetta.png"
-          />
-          <div>
-            <h4>Bruschetta</h4>
-            <p>Grilled bread topped with fresh tomatoes, garlic & basil.</p>
-          </div>
+    <section id="menu" class="section menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Culinary masterpieces crafted with passion</p>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="starters">Starters</button>
+                <button class="category-btn" data-category="mains">Main Courses</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Truffle Arancini" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Truffle Arancini</h4>
+                            <span class="price">₹850</span>
+                        </div>
+                        <p>Crispy saffron risotto balls filled with black truffle and mozzarella</p>
+                        <div class="menu-item-tags">
+                            <span class="tag vegetarian">Vegetarian</span>
+                            <span class="tag new">New</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=2080&q=80" alt="Seared Scallops" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Seared Scallops</h4>
+                            <span class="price">₹1200</span>
+                        </div>
+                        <p>Perfectly seared scallops with cauliflower purée and brown butter</p>
+                        <div class="menu-item-tags">
+                            <span class="tag chefs-choice">Chef's Choice</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Courses -->
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2080&q=80" alt="Herb-Crusted Salmon" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Herb-Crusted Salmon</h4>
+                            <span class="price">₹1850</span>
+                        </div>
+                        <p>Atlantic salmon with parmesan-herb crust and lemon beurre blanc</p>
+                        <div class="menu-item-tags">
+                            <span class="tag popular">Popular</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1481070555726-e2fe8357725c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2035&q=80" alt="Wagyu Beef" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Wagyu Beef Tenderloin</h4>
+                            <span class="price">₹3500</span>
+                        </div>
+                        <p>Australian wagyu beef with truffle mashed potatoes</p>
+                        <div class="menu-item-tags">
+                            <span class="tag premium">Premium</span>
+                            <span class="tag new">New</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2080&q=80" alt="Chocolate Soufflé" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Chocolate Soufflé</h4>
+                            <span class="price">₹650</span>
+                        </div>
+                        <p>Rich dark chocolate soufflé with vanilla bean ice cream</p>
+                        <div class="menu-item-tags">
+                            <span class="tag vegetarian">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Drinks -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2080&q=80" alt="Signature Cocktail" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Nexus Signature Cocktail</h4>
+                            <span class="price">₹750</span>
+                        </div>
+                        <p>House specialty with premium gin, elderflower, and fresh citrus</p>
+                        <div class="menu-item-tags">
+                            <span class="tag popular">Popular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-footer">
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download Full Menu (PDF)
+                </a>
+            </div>
         </div>
-
-        <div class="menu-card">
-          <img src="Images/Garlic_Shrimp.png" alt="Garlic Shrimp" />
-          <div>
-            <h4>Garlic Shrimp</h4>
-            <p>Butter sautéed shrimp with herbs and lemon zest.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Main Courses -->
-      <h3 class="menu-category">Main Courses</h3>
-      <div class="menu-grid large">
-        <div class="menu-card">
-          <img
-            src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80"
-          />
-          <div>
-            <h4>Grilled Ribeye Steak</h4>
-            <p>12oz ribeye with rosemary butter and garlic mash.</p>
-          </div>
-        </div>
-
-        <div class="menu-card">
-          <img
-            src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
-          />
-          <div>
-            <h4>Herb Roasted Chicken</h4>
-            <p>Served with seasonal vegetables & creamy sauce.</p>
-          </div>
-        </div>
-
-        <div class="menu-card">
-          <img
-            src="https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=800&q=80"
-          />
-          <div>
-            <h4>Creamy Pasta Alfredo</h4>
-            <p>Classic Italian pasta with parmesan cream sauce.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Desserts -->
-      <h3 class="menu-category">Desserts</h3>
-      <div class="menu-grid large">
-        <div class="menu-card">
-          <img
-            src="Images/Chocolate_Lava_Cake.png"
-          />
-          <div>
-            <h4>Chocolate Lava Cake</h4>
-            <p>Molten chocolate center served warm with ice cream.</p>
-          </div>
-        </div>
-
-        <div class="menu-card">
-          <img
-            src="Images/Cheese_Cake.png"
-          />
-          <div>
-            <h4>Cheesecake</h4>
-            <p>Rich creamy cheesecake with berry compote.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Drinks -->
-      <h3 class="menu-category">Drinks</h3>
-      <div class="menu-grid large">
-        <div class="menu-card">
-          <img
-            src="Images/Orange_Juice.png"
-          />
-          <div>
-            <h4>Fresh Orange Juice</h4>
-            <p>Cold-pressed from ripe oranges.</p>
-          </div>
-        </div>
-
-        <div class="menu-card">
-          <img
-            src="Images/Coffee.png"
-          />
-          <div>
-            <h4>House Coffee</h4>
-            <p>Dark roast arabica blend.</p>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="section">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <img
-          src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=60"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=60"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=60"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=60"
-        />
-      </div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">A glimpse into the Nexus experience</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Dining Area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Elegant Dining</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Open Kitchen" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Open Kitchen</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Private Dining" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Private Events</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=2080&q=80" alt="Food Presentation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Artistic Plating</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section dark">
-      <h2>Reservations</h2>
-      <p class="section-text">
-        Book a table and enjoy an unforgettable dining experience.
-      </p>
-
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Email" />
-        <input type="date" />
-        <textarea placeholder="Special Requests"></textarea>
-        <button class="btn">Reserve Now</button>
-      </form>
+    <!-- Reservation Section -->
+    <section id="reservation" class="section reservation">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-text">
+                    <h2 class="section-title">Book Your Table</h2>
+                    <p class="section-subtitle">Secure your spot for an unforgettable dining experience</p>
+                    
+                    <div class="reservation-features">
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Open Hours</h4>
+                                <p>Mon-Thu: 11AM - 11PM</p>
+                                <p>Fri-Sun: 11AM - 12AM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+91 79091 03947</p>
+                                <p>Available 10AM - 11PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Group Bookings</h4>
+                                <p>Special arrangements for parties of 8+</p>
+                                <p>Private dining available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reservation-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" required>
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Time</option>
+                                    <option>18:00</option>
+                                    <option>18:30</option>
+                                    <option>19:00</option>
+                                    <option>19:30</option>
+                                    <option>20:00</option>
+                                    <option>20:30</option>
+                                    <option>21:00</option>
+                                </select>
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Guests</option>
+                                    <option>1 Person</option>
+                                    <option>2 People</option>
+                                    <option>3 People</option>
+                                    <option>4 People</option>
+                                    <option>5 People</option>
+                                    <option>6 People</option>
+                                    <option>7+ People</option>
+                                </select>
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests (Dietary, Occasion, etc.)" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-check-circle"></i> Confirm Booking
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-      <p>© 2025 UrbanTaste. All rights reserved.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Visit Us</h2>
+                <p class="section-subtitle">We'd love to welcome you</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Gourmet Avenue</p>
+                            <p>Mumbai, India 400001</p>
+                            <a href="#" class="link">Get Directions →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 79091 03947</p>
+                            <p>Mon-Sun: 10AM - 11PM</p>
+                            <a href="tel:+917909103947" class="link">Call Now →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>reservations@nexus.in</p>
+                            <p>info@nexus.in</p>
+                            <a href="mailto:reservations@nexus.in" class="link">Send Email →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Interactive Map Location</p>
+                        <small>123 Gourmet Avenue, Mumbai</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Nexus Restaurant</h3>
+                    <p>Crafting exceptional dining experiences since 2015</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <div class="hours">
+                        <div class="hour-row">
+                            <span>Monday - Thursday</span>
+                            <span>11:00 AM - 11:00 PM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span>Friday - Saturday</span>
+                            <span>11:00 AM - 12:00 AM</span>
+                        </div>
+                        <div class="hour-row">
+                            <span>Sunday</span>
+                            <span>11:00 AM - 10:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe for exclusive offers and events</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nexus Restaurant. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> by Nexus Team</p>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
